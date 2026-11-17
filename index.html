@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MG STORE | Sua loja. Suas escolhas.</title>
+<meta name="description" content="Vitrine digital MG STORE: produtos selecionados em tecnologia, moda, casa e automotivos.">
+<style>
+:root{--black:#101010;--ink:#171717;--muted:#666;--line:#e7e7e7;--paper:#f7f7f7;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper)}
+a{color:inherit;text-decoration:none}.top{background:#080808;color:#eee;padding:10px 5%;font-size:12px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header{background:#111;color:white;padding:18px 5%;display:flex;align-items:center;gap:24px;justify-content:space-between}
+.logo{font-size:30px;font-weight:900;letter-spacing:-1.5px}.logo span{display:block;font-size:10px;letter-spacing:5px;margin-top:-3px}
+.search{flex:1;max-width:560px}.search input{width:100%;padding:13px 16px;border-radius:30px;border:1px solid #555;background:#222;color:white;font-size:15px}
+nav{background:#1a1a1a;color:white;display:flex;justify-content:center;gap:30px;padding:14px 12px;flex-wrap:wrap;font-size:14px}
+nav a:hover{ text-decoration:underline}
+.hero{background:linear-gradient(110deg,#090909,#333);color:white;padding:62px 7%;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:24px}
+.hero h1{font-size:clamp(36px,6vw,64px);line-height:.98;margin:8px 0 18px;letter-spacing:-2px}.hero p{font-size:18px;color:#ddd;max-width:520px;line-height:1.5}
+.eyebrow{font-size:13px;letter-spacing:4px;font-weight:bold}.hero-art{min-height:220px;border:1px solid #666;border-radius:22px;background:radial-gradient(circle at 50% 40%,#777,#222 58%,#111);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;font-size:26px;font-weight:bold}
+.btn{display:inline-block;background:white;color:#111;padding:13px 20px;border-radius:7px;font-weight:bold;margin-top:12px}
+.wrap{max-width:1200px;margin:auto;padding:38px 5%}.section-title{font-size:27px;margin:0 0 20px}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.cat{background:#151515;color:white;border-radius:12px;padding:22px 16px;min-height:110px;font-weight:bold}.cat small{display:block;color:#ccc;font-weight:normal;margin-top:9px}
+.notice{background:#fff;border:1px solid var(--line);padding:14px 16px;border-radius:10px;color:#555;font-size:13px;line-height:1.5;margin:20px 0}
+.tools{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}.tools input,.tools select{padding:12px;border:1px solid #ccc;border-radius:8px;background:white;font-size:14px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.product{background:white;border:1px solid var(--line);border-radius:12px;overflow:hidden}.pic{height:150px;background:linear-gradient(135deg,#eee,#d5d5d5);display:flex;align-items:center;justify-content:center;font-size:44px}.product-body{padding:15px}.tag{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#777}.product h3{font-size:16px;margin:8px 0}.product p{font-size:13px;line-height:1.45;color:#666;min-height:38px}.price{font-weight:bold;font-size:18px}.buy{display:block;text-align:center;background:#111;color:white;padding:11px;border-radius:7px;margin-top:12px;font-size:13px;font-weight:bold}.buy.disabled{background:#ddd;color:#555}
+footer{background:#101010;color:#eee;padding:30px 5%;text-align:center;font-size:13px;line-height:1.7}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}header{flex-wrap:wrap}.search{order:3;flex-basis:100%;max-width:none}nav{gap:15px}}
+@media(max-width:430px){.products{grid-template-columns:1fr 1fr}.pic{height:115px}.product-body{padding:11px}.product p{min-height:58px}}
+</style>
+</head>
+<body>
+<div class="top"><span>VITRINE DIGITAL • PRODUTOS DE PARCEIROS</span><span>Links de afiliados identificados com transparência</span></div>
+<header>
+  <a class="logo" href="#">MG<span>STORE</span></a>
+  <div class="search"><input id="search" type="search" placeholder="O que você procura?" aria-label="Buscar produtos"></div>
+  <span>♡ Favoritos &nbsp; | &nbsp; Catálogo</span>
+</header>
+<nav>
+  <a href="#inicio">Início</a><a href="#categorias">Categorias</a><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a><a href="#contato">Contato</a>
+</nav>
+<section class="hero" id="inicio">
+  <div><div class="eyebrow">MG STORE</div><h1>Sua loja.<br>Suas escolhas.</h1>
+  <p>Uma vitrine digital com produtos de diferentes categorias para ajudar você a encontrar o que procura.</p>
+  <a class="btn" href="#produtos">Explorar produtos →</a></div>
+  <div class="hero-art">TECNOLOGIA&nbsp; • &nbsp;MODA<br>CASA&nbsp; • &nbsp;ESTILO</div>
+</section>
+<main>
+<section class="wrap" id="categorias">
+  <h2 class="section-title">Nossas categorias</h2>
+  <div class="categories">
+    <a class="cat" href="#produtos" data-cat="Eletrônicos">▣ Eletrônicos<small>Acessórios e tecnologia</small></a>
+    <a class="cat" href="#produtos" data-cat="Moda">◇ Moda<small>Roupas e acessórios</small></a>
+    <a class="cat" href="#produtos" data-cat="Casa">⌂ Casa e utilidades<small>Ideias para o dia a dia</small></a>
+    <a class="cat" href="#produtos" data-cat="Automotivos">▰ Automotivos<small>Acessórios para veículos</small></a>
+  </div>
+</section>
+<section class="wrap" id="produtos">
+  <h2 class="section-title">Produtos em destaque</h2>
+  <div class="notice"><strong>Vitrine demonstrativa:</strong> os itens abaixo são exemplos de cadastro, não ofertas disponíveis. Antes de publicar, substitua por produtos reais de parceiros, confirme preço, disponibilidade, comissão e regras de divulgação, e adicione seu link de afiliado autorizado.</div>
+  <div class="tools">
+    <input id="filter" type="search" placeholder="Buscar nesta vitrine..." aria-label="Buscar nesta vitrine">
+    <select id="category" aria-label="Filtrar categoria"><option value="">Todas as categorias</option><option>Eletrônicos</option><option>Moda</option><option>Casa</option><option>Automotivos</option></select>
+  </div>
+  <div class="products" id="grid">
+    <article class="product" data-category="Eletrônicos"><div class="pic">🎧</div><div class="product-body"><div class="tag">Eletrônicos • Exemplo</div><h3>Fone de ouvido</h3><p>Adicione aqui a descrição real fornecida pelo parceiro.</p><div class="price">Consulte o parceiro</div><a class="buy disabled" href="#contato">Link de afiliado pendente</a></div></article>
+    <article class="product" data-category="Eletrônicos"><div class="pic">⌚</div><div class="product-body"><div class="tag">Eletrônicos • Exemplo</div><h3>Relógio inteligente</h3><p>Adicione aqui a descrição real fornecida pelo parceiro.</p><div class="price">Consulte o parceiro</div><a class="buy disabled" href="#contato">Link de afiliado pendente</a></div></article>
+    <article class="product" data-category="Moda"><div class="pic">👕</div><div class="product-body"><div class="tag">Moda • Exemplo</div><h3>Camiseta básica</h3><p>Adicione aqui a descrição real fornecida pelo parceiro.</p><div class="price">Consulte o parceiro</div><a class="buy disabled" href="#contato">Link de afiliado pendente</a></div></article>
+    <article class="product" data-category="Moda"><div class="pic">👟</div><div class="product-body"><div class="tag">Moda • Exemplo</div><h3>Tênis casual</h3><p>Adicione aqui a descrição real fornecida pelo parceiro.</p><div class="price">Consulte o parceiro</div><a class="buy disabled" href="#contato">Link de afiliado pendente</a></div></article>
+    <article class="product" data-category="Casa"><div class="pic">🍳</div><div class="product-body"><div class="tag">Casa • Exemplo</div><h3>Utensílio de cozinha</h3><p>Adicione aqui a descrição real fornecida pelo parceiro.</p><div class="price">Consulte o parceiro</div><a class="buy disabled" href="#contato">Link de afiliado pendente</a></div></article>
+    <article class="product" data-category="Casa"><div class="pic">💡</div><div class="product-body"><div class="tag">Casa • Exemplo</div><h3>Luminária decorativa</h3><p>Adicione aqui a descrição real fornecida pelo parceiro.</p><div class="price">Consulte o parceiro</div><a class="buy disabled" href="#contato">Link de afiliado pendente</a></div></article>
+    <article class="product" data-category="Automotivos"><div class="pic">🚗</div><div class="product-body"><div class="tag">Automotivos • Exemplo</div><h3>Organizador automotivo</h3><p>Adicione aqui a descrição real fornecida pelo parceiro.</p><div class="price">Consulte o parceiro</div><a class="buy disabled" href="#contato">Link de afiliado pendente</a></div></article>
+    <article class="product" data-category="Automotivos"><div class="pic">📱</div><div class="product-body"><div class="tag">Automotivos • Exemplo</div><h3>Suporte para celular</h3><p>Adicione aqui a descrição real fornecida pelo parceiro.</p><div class="price">Consulte o parceiro</div><a class="buy disabled" href="#contato">Link de afiliado pendente</a></div></article>
+  </div>
+  <p id="empty" style="display:none;color:#666">Nenhum produto encontrado nesta categoria.</p>
+</section>
+<section class="wrap" id="sobre">
+  <h2 class="section-title">Sobre a MG STORE</h2>
+  <p style="line-height:1.7;color:#555">A MG STORE é uma vitrine digital independente que apresenta produtos de vendedores parceiros. A compra, o pagamento, o envio, a troca e o atendimento do pedido são realizados pelo vendedor responsável, de acordo com as condições informadas no site de destino.</p>
+</section>
+<section class="wrap" id="contato">
+  <h2 class="section-title">Contato e transparência</h2>
+  <div class="notice">Alguns links poderão ser links de afiliados. Isso significa que a MG STORE poderá receber uma comissão se você comprar por meio deles, sem custo adicional para você. Os preços, a disponibilidade e as condições devem ser conferidos no site do vendedor antes da compra.</div>
+  <p style="color:#555">Contato: adicione aqui um e-mail comercial ou canal de atendimento autorizado pelo responsável.</p>
+</section>
+</main>
+<footer>© 2026 MG STORE • Vitrine digital independente<br>Os produtos e links precisam ser verificados e atualizados antes da publicação.</footer>
+<script>
+const cards=[...document.querySelectorAll('.product')], search=document.querySelector('#search'), filter=document.querySelector('#filter'), category=document.querySelector('#category'), empty=document.querySelector('#empty');
+function update(){const q=(search.value+' '+filter.value).trim().toLowerCase(), c=category.value;let shown=0;cards.forEach(card=>{const ok=(!c||card.dataset.category===c)&&(!q||card.innerText.toLowerCase().includes(q));card.style.display=ok?'':'none';if(ok)shown++});empty.style.display=shown?'none':'block'}
+[search,filter,category].forEach(el=>el.addEventListener('input',update));
+document.querySelectorAll('.cat').forEach(a=>a.addEventListener('click',()=>{category.value=a.dataset.cat;update()}));
+</script>
+</body></html>
